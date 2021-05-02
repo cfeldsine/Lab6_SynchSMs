@@ -147,7 +147,7 @@ int main(void) {
     unsigned char tmpA = 0x00;
     state = init;
     while (1) {
-	tmpA = PINA;
+	tmpA = ~PINA;
 	TickFct(tmpA);
 	PORTB = tmpB;
 
